@@ -4,28 +4,29 @@ interface Animals {
 }
  class Dog implements Animals{
 	public void speak() {
-		System.out.println("bark");
+		System.out.println("Dog bark");
 	}
 	public void eat() {
-		System.out.println("bones");
+		System.out.println("Dog eat bones");
 	}
  }
  class cat implements Animals{
 		public void speak() {
-			System.out.println("meow");
+			System.out.println("Cat meow");
 		}
 		public void eat() {
-			System.out.println("veggies");
+			System.out.println("Cat veggies");
 		}
 	 }
 
 class question1{
  public static void main(String[] args) {
-      Dog d=new Dog();
+      Animals d=new Dog();
       d.speak();
       d.eat();
-      cat c=new cat();
-      c.speak();
-      c.eat();
+      d=new cat();
+System.out.println("\n---------------------\n");
+      d.speak();
+      d.eat();
 }
 }
